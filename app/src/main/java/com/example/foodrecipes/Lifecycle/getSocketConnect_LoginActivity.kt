@@ -43,7 +43,7 @@ class getSocketConnect_LoginActivity():LifecycleObserver{
          lateinit var BufferReader: ObjectInputStream
 
          lateinit var socket:Socket
-          val POST = 8888
+          val POST = 8881
 
 
     }
@@ -55,7 +55,7 @@ class getSocketConnect_LoginActivity():LifecycleObserver{
         ExecutorService.execute {
             try {
                 Log.v("pppp","litenfei")
-                socket = Socket("10.129.98.59",POST)
+                socket = Socket("8.130.11.202",POST)
                 Log.v("pppp","连接成功" )
                 socket.soTimeout = 2000000000
                 /*只能对流封装一次*/
