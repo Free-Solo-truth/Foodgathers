@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activity1.show_foodActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/showFood_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food"
+        >
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/courgette1"
+            android:text="Title:"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/andika"
+            android:text="soup"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type:"
+                android:fontFamily="@font/courgette1"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content">
+
+            <CheckedTextView
+                android:id="@+id/lowFodmap1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lowFodmap"
+                android:checked="true"
+                android:checkMark="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_marginRight="20dp" />
+            <CheckedTextView
+                android:id="@+id/vegan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vegan"
+                android:checkMark="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_marginRight="20dp"
+                ></CheckedTextView>
+            <CheckedTextView
+                android:id="@+id/vegetarian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vegetarian"
+                android:checkMark="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_marginRight="20dp"
+                ></CheckedTextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content">
+
+            <CheckedTextView
+                android:id="@+id/veryPopular1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="veryPopular"
+                android:checkMark="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_marginRight="20dp"
+                ></CheckedTextView>
+            <CheckedTextView
+                android:id="@+id/sustainable1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sustainable"
+                android:checkMark="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_marginRight="20dp"
+                ></CheckedTextView>
+            <CheckedTextView
+                android:id="@+id/dairyFree1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dairyFree"
+                android:checkMark="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_marginRight="20dp"
+                ></CheckedTextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc:"
+                android:textSize="30dp"
+                android:fontFamily="@font/courgette1"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc:"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+                ></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

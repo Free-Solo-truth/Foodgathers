@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:clickable="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    app:rippleColor="#A8C0EC"
+    app:state_dragged="true"
+    android:layout_marginTop="5dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"
+                >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/favoritytitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/alata"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="litenfei">
+
+            </TextView>
+            <TextView
+                android:id="@+id/favoritysubit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="litenfeieqweqweq"
+                android:maxLines="6"
+                android:textSize="10dp"
+                android:layout_margin="5dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/circleImageView">
+
+            </TextView>
+
+        </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

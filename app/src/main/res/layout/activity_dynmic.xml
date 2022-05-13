@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipRefreshView"
+    tools:context=".ui.Activity1.DynamicActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:background="#F3F3F3"
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/set_background"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@color/darkGray"
+            android:background="@drawable/gradient"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:alpha="0.3"
+            android:background="@drawable/gradient"
+            >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/top_dynamic"
+            android:background="@drawable/cancelline_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test1"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp"
+                android:scaleY="2.0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="right"
+                >
+                <ImageView
+                    android:id="@+id/setDynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_baseline_camera_alt_24">
+
+                </ImageView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="215dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <TextView
+                android:id="@+id/dynamic_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/bungee_shade"
+                android:letterSpacing="0.07"
+                android:maxLength="10"
+                android:text="Litenfei"
+                android:textColor="@color/white"
+                android:textStyle="bold"></TextView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dynamic_userimage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/test"></ImageView>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F3F3F3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+
+

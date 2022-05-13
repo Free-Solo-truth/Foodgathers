@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".ui.Activity1.setDynamicActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test1"
+        android:layout_gravity="center"
+        android:scaleY="2.6"
+        android:layout_margin="10dp"
+        >
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/send_dynamic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="20dp"
+            android:text="发布"
+            ></Button>
+    </RelativeLayout>
+
+</LinearLayout>
+    <EditText
+        android:id="@+id/dynamic_text"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="说点事什么吧"
+        android:padding="20dp"
+        android:background="@drawable/cancelline_edit"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="">
+    </EditText>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView_image"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

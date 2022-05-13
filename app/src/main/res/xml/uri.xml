@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="my_images"
+        path="/">
+        <!--        其中的/ 表示将整个的SD存储进行共享-->
+    </external-path>
+</paths>

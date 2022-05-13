@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodrecipes">
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_joker"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodRecipes"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.Activity1.AddFriendActivity"></activity>
+        <activity android:name=".ui.Activity1.SearchActivity" />
+        <activity android:name=".ui.Activity1.show_foodActivity" />
+        <activity
+            android:name=".ui.Activity1.setDynamicActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="com.netease.push.action.client.MESSAGE"/>
+                <action android:name="com.netease.push.action.client.NEWID"/>
+                <action android:name="com.netease.push.action.client.METHOD"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Activity1.DynamicActivity" />
+        <activity android:name=".ui.Activity1.RandFoodActivity" />
+
+        <service android:name=".Service.AppListener" />
+
+        <activity android:name=".ui.Activity1.DetailsActivity" />
+        <activity android:name=".ui.Activity1.ChatActivity" />
+        <activity android:name=".ui.Activity1.Conperson_infoActivity" />
+        <activity android:name=".ui.Activity1.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Activity1.EnrollActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/uri" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:fitsSystemWindows="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" /> <!-- //注册contentProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.foodrecipes.fileprvoider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 指定共享路径 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/uri" />
+        </provider>
+    </application>
+
+</manifest>

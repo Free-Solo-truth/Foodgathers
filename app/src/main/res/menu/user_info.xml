@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/ContactPerson"
+        android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:title="ConPerson"
+
+        ></item>、
+    <item
+        android:id="@+id/Collection"
+        android:title="Collection"
+        android:icon="@drawable/ic_baseline_collections_bookmark_24"
+        ></item>
+    <item
+        android:id="@+id/Member"
+        android:title="Member"
+        android:icon="@drawable/ic_membership"
+        ></item>
+    <item
+        android:id="@+id/Location"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="Location"
+        >
+    </item>
+
+    <item
+        android:id="@+id/Mail"
+        android:title="Mail"
+        android:icon="@drawable/ic_baseline_contact_mail_24"
+        ></item>
+    <item
+        android:id="@+id/Task"
+        android:title="Task"
+        android:icon="@drawable/ic_past"
+        >
+    </item>
+    </group>
+</menu>

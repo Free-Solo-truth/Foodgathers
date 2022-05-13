@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    >
+
+    <item
+        android:id="@+id/recipesFragment"
+        android:icon="@drawable/ic____"
+        android:title="扫一扫"
+        ></item>
+    <item
+        android:id="@+id/favoritesFragment"
+        android:icon="@drawable/ic_star"
+        android:title="我的菜单"
+        />
+    <item
+        android:id="@+id/jokeFragment"
+        android:icon="@drawable/ic_face"
+        android:title="关于我们"
+        />
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumGray"
+    android:id="@+id/Constraintlayout"
+    tools:context=".ui.Activity1.ChatActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/about_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:theme="@style/toolbar_theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_700"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/ChatPersonname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="About"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ChatRecycleView"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Linearlayout_SendMsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_appbar">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+            android:id="@+id/Linearlayout_SendMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="206dp">
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="李腾飞"-->
+            <!--            android:paddingLeft="10dp"-->
+            <!--            android:paddingTop="5dp"-->
+            <!--            android:background="@drawable/chatUI"-->
+            <!--            android:backgroundTint="@color/white"-->
+            <!--            >-->
+
+            <!--        </TextView>-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Edit_SendMsg"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/sendmsg1"
+                android:hint="edit your msg"
+                android:imeOptions="flagNoExtractUi"
+                android:padding="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/send_msgButton"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/send_button"
+                android:text="Send"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/Edit_SendMsg"
+                app:layout_constraintTop_toTopOf="parent"></Button>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
