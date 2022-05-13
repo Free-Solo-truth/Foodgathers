@@ -47,7 +47,7 @@ import java.net.URL
 
 
 class setDynamicActivity : BaseActivity() {
-    val uri:String="http://8.130.11.202:8080/post_war3/ImageServlet";
+    val uri:String="http://你的服务器ip:8080/post_war3/ImageServlet";
     lateinit var outputImage:File
     lateinit var imageUri: Uri
     lateinit var jsonstr: String
