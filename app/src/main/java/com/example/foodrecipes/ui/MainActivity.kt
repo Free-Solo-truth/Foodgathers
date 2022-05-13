@@ -59,7 +59,7 @@ import java.net.URL
 
 
  class MainActivity : BaseActivity()  {
-     val uri:String="http://8.130.11.202:8080/post_war3/ImageServlet";
+     val uri:String="http://你的服务器:8080/post_war3/ImageServlet";
      private val getUserInfo = getData_fromSQLViewmodel()
     private var menuItem: MenuItem? = null
      private var user_image:String? = null
