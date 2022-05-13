@@ -55,7 +55,7 @@ class getSocketConnect_LoginActivity():LifecycleObserver{
         ExecutorService.execute {
             try {
                 Log.v("pppp","litenfei")
-                socket = Socket("8.130.11.202",POST)
+                socket = Socket("你的服务ip",POST)
                 Log.v("pppp","连接成功" )
                 socket.soTimeout = 2000000000
                 /*只能对流封装一次*/
